@@ -2,6 +2,8 @@ const Users = require("../models/user.model");
 const mongoose = require("mongoose");
 
 exports.helloWorld = (req, res) => {
+  console.log("USERNAME: ", process.env.USERNAME);
+  console.log("PASSWORD: ", process.env.PASSWORD);
   res.send({
     message: "hello world",
   });
